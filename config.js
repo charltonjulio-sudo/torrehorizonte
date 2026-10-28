@@ -1,4 +1,4 @@
-// Configuração da Torre Horizonte (v0.2.0-alpha). Fica na mesma pasta do index.html.
+// Configuração da Torre Horizonte (v0.4.0-alpha). Fica na mesma pasta do index.html.
 // Se este arquivo não existir, o jogo usa os padrões. A Área do Professor gera uma versão nova
 // quando você liga o Google Forms (aba Formulário) ou troca a frase-senha (aba Ferramentas).
 window.TORRE_CONFIG = {
@@ -8,6 +8,9 @@ window.TORRE_CONFIG = {
   formsUrl: '',
   // Link da planilha de respostas "Publicada na Web" como CSV (para o Mural). Não divulgue aos alunos.
   muralCsv: '',
+  // Link do Classroom de cada turma, para o botão "Relatar problema". Vazio = página inicial do Classroom.
+  // Mais fácil gerar pela Área do Professor > Ferramentas > Links do Classroom.
+  classroom: {},
   // Colégios e turmas. Mudar o nome de uma turma invalida o código de quem já joga nela.
   escolas: [
     { sigla: 'IEEL', nome: 'Instituto de Educação Estadual de Londrina',
